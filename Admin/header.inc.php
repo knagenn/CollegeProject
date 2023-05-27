@@ -140,17 +140,14 @@
       } else if (url == "users.php") {
         $('.nav-link').removeClass("active");
         $('#users').addClass("active");
-      } else if (url == "category_manager.php") {
+      } else if (url == "category_manager.php" || url=="add_categories.php") {
         $('.nav-link').removeClass("active");
         $('#category_manager').addClass("active");
       } else if (url == "orders.php") {
         $('.nav-link').removeClass("active");
         $('#orders').addClass("active");
-      } else if (url == "product_manager.php") {
+      } else if (url == "product_manager.php" || url == "add_products.php") {
         $('.nav-link').removeClass("active");
         $('#product_manager').addClass("active");
-      } else if (url == "add_products.php") {
-        $('.nav-link').removeClass("active");
-        $('#product_manager').addClass("active");
-      }
+      } 
     </script>
