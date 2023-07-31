@@ -7,7 +7,7 @@ if(isset($_POST['submit'])){
     $query=mysqli_query($con,"select * from users where email='$email' && password='$password'");
     if(mysqli_num_rows($query)==1){
         $_SESSION['user_id']=$email;
-        alert('You are Looged In');
+        // alert('You are Looged In');
         redirect('Users/index.php');
     }else{
         alert('Login Failed');
@@ -25,34 +25,39 @@ if(isset($_POST['submit'])){
     <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+   
 </head>
 
 <body>
     <main>
-        <div class="container-fluid">
+        <div class="container shadow-lg">
             <div class="row">
                 
-                <div class="col-sm-6 login-section-wrapper">
+                <div class="col-sm-6 login-section-wrapper ">
                     <div class="login-wrapper my-auto">
-                        <h1 class="login-title">Log In</h1>
+                        <h1 class="display-3 mb-5 text-center h1">Log In</h1>
                         <form action="" method="post">
-                            <div class="form-group">
-                                <label for="email">Email</label>
+                            <div class="form-group mb-4">
+                                <label style="font-size: 17px"for="email">Email</label>
                                 <input type="text" name="email" id="email" class="form-control"
                                     placeholder="Enter Your Email">
                             </div>
-                            <div class="form-group mb-4">
-                                <label for="password">Password</label>
+                            <div class="form-group mb-5">
+                                <label style="font-size: 17px"for="password">Password</label>
                                 <input type="password" name="password" id="password" class="form-control"
                                     placeholder="Enter Your Passsword">
                             </div>
-                            <input name="submit" class="btn btn-block login-btn" type="submit" value="Login">
+                            <input name="submit" class="btn btn-block login-btn mb-4" type="submit" value="Login">
                         </form>
-                        <a href="register.php">Don't Have Any Account? Register Here</a>
+                        <p style="color:red;font-size: 17px">
+                        Don't Have Any Account? 
+                            <a href="register.php">Register Here</a>
+                        </p>
+
                     </div>
                 </div>
-                <div class="col-sm-6 px-0 d-none d-sm-block">
-                    <img src="https://portal.realtorhaus.com/assets/img/login.jpg" alt="login image" class="login-img">
+                <div class="col-sm-6 px-0 d-none d-sm-block" >
+                    <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80" alt="login image" class="login-img">
                 </div>
             </div>
         </div>
@@ -191,12 +196,11 @@ if(isset($_POST['submit'])){
         }
 
         .login-img {
-            width: 100%;
-            height: 100vh;
-            -o-object-fit: cover;
-            object-fit: cover;
-            -o-object-position: left;
-            object-position: left;
+            border:none;
+            object-fit:cover;
+            width:500px;
+            height:500px;
+            margin-top:50px;
         }
     </style>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

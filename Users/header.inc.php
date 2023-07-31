@@ -17,7 +17,7 @@ $phone = $list['phone'];
 <html lang="en">
 
 <head>
-  <title>Shoppers</title>
+  <title>Sneaker Head</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -45,34 +45,44 @@ $phone = $list['phone'];
 
 <body>
 
-  <div class="site-wrap">
-    <header class="site-navbar" role="banner">
-      <div class="site-navbar-top">
-        <div class="container">
-          <div class="row align-items-center">
+  <div class="site-wrap"style="background-color:#f5f5f5">
+    <header class="site-navbar" role="banner" >      
+      <div class="" >
+        <div class="">
+          
+        
+        
+        <div class="row align-items-center">
             <div class="col-6 col-md-4 order-2 order-md-1 site-search-icon text-left">
-              <form action="" class="site-block-top-search">
-                <span class="icon icon-search2"></span>
-                <input type="text" class="form-control border-0" placeholder="Search">
-              </form>
             </div>
-
-            <div class="col-12 mb-3 mb-md-0 col-md-4 order-1 order-md-2 text-center">
-              <div class="site-logo">
-                <a href="index.php" class="js-logo-clone">Shoppers</a>
+ 
+            <div class=" text-center">
+              
+            
+            
+            <div class="">
+              <nav class="navbar navbar-light">
+  <a class="navbar-brand ml-5" href="index.php">
+    <img src="https://png.pngitem.com/pimgs/s/39-391162_sneakers-clip-art-at-clker-sneakers-clip-art.png" width="50" height="50" class="d-inline-block align-center" alt="">
+    <strong style="font-family: 'Brush Script MT', cursive;font-size: 50px;text-shadow: 3px 3px 6px red;">Sneaker Head</strong>
+  </a>
+</nav>
+                <!-- <a href="index.php" class="js-logo-clone">SNEAKERHEAD</a> -->
               </div>
+
             </div>
+            
             <div class="col-6 col-md-4 order-3 order-md-3 text-right">
               <div class="site-top-icons">
                 <ul>
-                  <li class="mr-2">
+                  <li class="mr-3">
                     <a href="cart.php" class="site-cart">
                       <span class="icon icon-shopping_cart"></span>
                       <span class="count" id="cart_count">0</span>
                     </a>
                   </li>
-                  <li class="mr-2"><a href="orders.php"><span class="icon-shopping-bag"></span></a></li>
-                  <li class="mr-2"><a href="logout.php"><span class="icon-sign-out"></span></a></li>
+                  <li class="mr-3"><a href="orders.php"><span class="icon-shopping-bag"></span></a></li>
+                  <li class="mr-3"><a href="logout.php"><span class="icon-sign-out"></span></a></li>
                   <li class="d-inline-block d-md-none ml-md-0"><a href="#" class="site-menu-toggle js-menu-toggle"><span class="icon-menu"></span></a></li>
                 </ul>
               </div>
@@ -82,7 +92,7 @@ $phone = $list['phone'];
         </div>
       </div>
       <nav class="site-navigation text-right text-md-center" role="navigation">
-        <div class="container">
+        <div class="container" style="font-family: 'Times New Roman', serif;font-weight:bold">
           <ul class="site-menu js-clone-nav d-none d-md-block">
             <li class="home_tab active"><a href="index.php">Home</a></li>
             <?php

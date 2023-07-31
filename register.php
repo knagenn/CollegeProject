@@ -31,38 +31,46 @@ if(isset($_POST['submit'])){
 </head>
 <body>
     <main>
-        <div class="container-fluid">
+        <div class="container shadow-lg">
             <div class="row">
                 <div class="col-sm-6 login-section-wrapper">
                     <div class="login-wrapper my-auto">
-                        <h1 class="login-title">Register</h1>
+                        <h1 class="display-3 mb-5 text-center h1">Register</h1>
                         <form action="" method="post">
-                            <div class="form-group">
-                                <label for="name">Name</label>
+                            <div class="form-group mb-4">
+                                <label 
+                                style="font-size: 17px"
+                                for="name">Name</label>
                                 <input type="text" name="name" class="form-control"
                                     placeholder="Name">
                             </div>
-                            <div class="form-group">
-                                <label for="email">Email</label>
+                            <div class="form-group mb-5">
+                                <label 
+                                style="font-size: 17px"
+                                for="email">Email</label>
                                 <input type="email" name="email" class="form-control"
                                     placeholder="Email">
                             </div>
                             <div class="form-group">
-                                <label for="phone">Phone</label>
+                                <label 
+                                style="font-size: 17px"
+                                for="phone">Phone</label>
                                 <input type="text" name="phone" class="form-control"
                                     placeholder="Phone">
                             </div>
                             <div class="form-group mb-4">
-                                <label for="password">Password</label>
+                                <label 
+                                style="font-size: 17px"
+                                for="password">Password</label>
                                 <input type="password" name="password" id="password" class="form-control"
                                     placeholder="enter your passsword">
                             </div>
-                            <input name="submit" class="btn btn-block login-btn" type="submit" value="Register">
+                            <input name="submit" class="btn btn-block login-btn mb-4" type="submit" value="Register">
                         </form>
                     </div>
                 </div>
                 <div class="col-sm-6 px-0 d-none d-sm-block">
-                    <img src="https://portal.realtorhaus.com/assets/img/login.jpg" alt="login image" class="login-img">
+                    <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80" alt="register image" class="login-img">
                 </div>
             </div>
         </div>

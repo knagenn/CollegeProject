@@ -1,22 +1,22 @@
 <?php
   require 'header.inc.php';
 ?>
-<div class="bg-light py-3">
+<div class="bg-light py-3" style="font-family: 'Times New Roman', serif">
   <div class="container">
     <div class="row">
-      <div class="col-md-12 mb-0"><a href="index.html">Home</a> <span class="mx-2 mb-0">/</span> <strong
+      <div class="col-md-12 mb-0"><a href="index.php">Home</a> <span class="mx-2 mb-0">/</span> <strong
           class="text-black">Shop</strong></div>
     </div>
   </div>
 </div>
 
-<div class="site-section">
+<div class="site-section" style="background-color:#e8eaf6;color:black;">
   <div class="container">
 
     <div class="row mb-5">
       <div class="col-md-9 order-2">
 
-        <div class="row">
+        <div class="row" >
           <div class="col-md-12 mb-5">
             <div class="float-md-left mb-4">
               <h2 class="text-black h5">Shop All</h2>
@@ -112,17 +112,31 @@
             <div id="slider-range" class="border-primary"></div>
             <input type="text" name="text" id="amount" class="form-control border-0 pl-0 bg-white" disabled="" />
           </div>
-
+          
+         
           <div class="mb-4">
             <h3 class="mb-3 h6 text-uppercase text-black d-block">Size</h3>
             <label for="s_sm" class="d-flex">
-              <input type="checkbox" id="s_sm" class="mr-2 mt-1"> <span class="text-black">Small (2,319)</span>
+              <input type="checkbox" id="s_sm" class="mr-2 mt-1"> <span class="text-black">
+                Small(
+                  <?php $query3=mysqli_query($con,"select * from products where product_size='Small'");
+                $num=mysqli_num_rows($query3);
+                echo $num;?>
+                      )</span>
             </label>
             <label for="s_md" class="d-flex">
-              <input type="checkbox" id="s_md" class="mr-2 mt-1"> <span class="text-black">Medium (1,282)</span>
+              <input type="checkbox" id="s_md" class="mr-2 mt-1"> <span class="text-black">Medium (
+                <?php $query4=mysqli_query($con,"select * from products where product_size='Medium'");
+                $num2=mysqli_num_rows($query4);
+                echo $num2;?>
+                )</span>
             </label>
             <label for="s_lg" class="d-flex">
-              <input type="checkbox" id="s_lg" class="mr-2 mt-1"> <span class="text-black">Large (1,392)</span>
+              <input type="checkbox" id="s_lg" class="mr-2 mt-1"> <span class="text-black">Large (
+                <?php $query5=mysqli_query($con,"select * from products where product_size='Large'");
+                $num3=mysqli_num_rows($query5);
+                echo $num3;?>
+                )</span>
             </label>
           </div>
         </div>

@@ -39,7 +39,7 @@ if(isset($_POST['submit'])){
         $ext_boleh = array('jpg','jpeg','png');
 
         if(in_array($file_ext, $ext_boleh)){
-            $dir = '../Uploads/';
+            $dir = '../Users/images/';
             $status = move_uploaded_file( $file_tmp, $dir . $file_name );
             if($status)$image_files[]=$file_name;
         }else{
@@ -182,7 +182,7 @@ if(isset($_POST['submit'])){
             product_name: {
                 required:true,
                 minlength:3,
-                maxlength:10
+                maxlength:50
             },
             product_price: {
                 required:true,
@@ -196,7 +196,7 @@ if(isset($_POST['submit'])){
             product_description: {
                 required:true,
                 minlength:5,
-                maxlength:100,
+                maxlength:500,
             },
         },
         messages: {

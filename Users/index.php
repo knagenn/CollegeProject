@@ -1,16 +1,16 @@
+
 <?php
 require 'header.inc.php';
 ?>
-<div class="site-blocks-cover" style="background-image: url(images/hero_1.jpg);" data-aos="fade">
+<div class="site-blocks-cover" style="background-image: url(https://source.unsplash.com/random/?sneakers);object-fit: cover;" data-aos="fade">
   <div class="container">
     <div class="row align-items-start align-items-md-center justify-content-end">
       <div class="col-md-5 text-center text-md-left pt-5 pt-md-0">
-        <h1 class="mb-2">Finding Your Perfect Shoes</h1>
+        <h1 class="mb-2" style="color:white;text-shadow: 2px 2px 5px black;font-size:80px;">"BeLIeVe Us, We DeLIVer The BEST"</h1>
         <div class="intro-text text-center text-md-left">
-          <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam.
-            Integer accumsan tincidunt fringilla. </p>
+          <p class="mb-4" style="color:white; font-weight:bold;text-shadow: 2px 2px 5px black">"Who knew the perfect fit could be found in a box"</p>
           <p>
-            <a href="#" class="btn btn-sm btn-primary">Shop Now</a>
+            <a href="#" class="btn btn-sm btn-primary" >Get Your OWN :)</a>
           </p>
         </div>
       </div>
@@ -21,7 +21,7 @@ require 'header.inc.php';
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-7 site-section-heading text-center pt-4">
-        <h2>Products</h2>
+        <h2 style="font-family: 'Times New Roman', serif;font-size:50px">Products</h2>
       </div>
     </div>
     <div class="row">
